@@ -1,0 +1,83 @@
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+Azur/*
+\[Windows\]\[Conan\] Conan errors out whilst trying to create vs solution · Issue \#738 · rwengine-openrw.url
+build-cg/*
+Capture d’écran 2024-08-09 024023.png
+calcemu
+make.bat
+fxGLMark.g3a
+.vscode/*
+test/*
+/v1/Azur
+src/.vscode/settings.json
+.documentation-backups/
+
+
+# Generated CMake and fxSDK build trees (any project depth)
+**/build/
+**/build-cg/
+**/build-fx/
+**/CMakeFiles/
+**/CMakeCache.txt
+**/cmake_install.cmake
+
+# Local editor state and autosave backups
+**/.vscode/
+*.blend1
+
+# fxSDK build output
+build-cg/
+build-fx/
+*.g3a
+*.g1a

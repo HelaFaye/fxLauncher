@@ -1,0 +1,17 @@
+name: Host tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  cglink:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build and test the link library under ASan/UBSan
+        run: |
+          cmake -S lib/cglink -B build/cglink -DCMAKE_BUILD_TYPE=Debug \
+            -DCMAKE_C_FLAGS="-fsanitize=address,undefined -fno-sanitize-recover=all"
+          cmake --build build/cglink --parallel 2
+          ctest --test-dir build/cglink --output-on-failure
